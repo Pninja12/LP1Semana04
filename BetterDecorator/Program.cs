@@ -42,6 +42,13 @@ namespace BetterDecorator
             
         }
 
+        private static string Decor()
+        {
+            return (Decor("User did not specify args !", '=', 3));
+
+
+        }
+
         /// <summary>
         /// Main que recebe 3 parâmetros e envia para uma função para 
         /// receber uma string e imprimi-la
@@ -50,8 +57,11 @@ namespace BetterDecorator
         /// 1 int</param>
         static void Main(string[] args)
         {
-            Console.WriteLine(Decor(args[0],char.Parse(args[1])
-            ,int.Parse(args[2])));
+            if (args.Length == 3)
+                Console.WriteLine(Decor(args[0], char.Parse(args[1])
+            , int.Parse(args[2])));
+            else
+                Console.WriteLine(Decor());
         }
     }
 }
