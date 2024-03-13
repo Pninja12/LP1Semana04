@@ -2,6 +2,11 @@
 
 namespace BetterDecorator
 {
+    /// <summary>
+    /// Programa que recebe 3 parâmetros e imprime-os de acordo com a função 
+    /// Decor, imprime um char no ínicio e no fim um número de int vezes com uma
+    /// string no meio
+    /// </summary>
     class Program
     {
         /// <summary>
@@ -9,7 +14,8 @@ namespace BetterDecorator
         /// repetido um número int de vezes no fim e no início e no meio mete a
         /// string
         /// </summary>
-        /// <param name="s">String recebida para imprimir no meio</param>
+        /// <param name="s">String recebida para imprimir no meio da
+        /// frase</param>
         /// <param name="c">Char recebido para imprimir um número de vezes no
         /// início e fim da string</param>
         /// <param name="i">Int recebido para repetir o char</param>
@@ -37,11 +43,11 @@ namespace BetterDecorator
         }
 
         /// <summary>
-        /// Programa que recebe 3 parâmetros e envia para uma função para 
+        /// Main que recebe 3 parâmetros e envia para uma função para 
         /// receber uma string e imprimi-la
         /// </summary>
         /// <param name="args">Recebe 3 parâmetro, 1 string, 1 char e 
-        /// um int</param>
+        /// 1 int</param>
         static void Main(string[] args)
         {
             Console.WriteLine(Decor(args[0],char.Parse(args[1])
