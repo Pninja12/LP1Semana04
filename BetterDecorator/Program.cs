@@ -5,7 +5,8 @@ namespace BetterDecorator
     /// <summary>
     /// Programa que recebe 3 parâmetros e imprime-os de acordo com a função 
     /// Decor, imprime um char no ínicio e no fim um número de int vezes com uma
-    /// string no meio
+    /// string no meio.
+    /// Porém caso não receba 3 parâmetros, imprime outra coisa
     /// </summary>
     class Program
     {
@@ -42,16 +43,20 @@ namespace BetterDecorator
             
         }
 
+        /// <summary>
+        /// Caso o Decor anterior não tenha parâmetros suficentes, correste esta
+        /// fução ao invés  
+        /// </summary>
+        /// <returns></returns>
         private static string Decor()
         {
             return (Decor("User did not specify args !", '=', 3));
-
-
         }
 
         /// <summary>
         /// Main que recebe 3 parâmetros e envia para uma função para 
-        /// receber uma string e imprimi-la
+        /// receber uma string e imprimi-la, caso não receba esses parâmetros,
+        /// imprime outra coisa
         /// </summary>
         /// <param name="args">Recebe 3 parâmetro, 1 string, 1 char e 
         /// 1 int</param>
